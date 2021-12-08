@@ -20,13 +20,15 @@ export const ShoppingPage = () => {
                 flexDirection: 'row',
                 flexWrap: 'wrap'
             }}>
-
+                {/* DOS TÉCNICAS */}
+                {/* Técnica 1 */}
                 <ProductCard product={ product }>
                     <ProductCard.Image />
                     <ProductCard.Title title={ 'Hola Mundo' } />
                     <ProductCard.Buttons  />
                 </ProductCard>
-
+                
+                {/* Técnica 2 */}
                 <ProductCard product={ product }>
                     <ProductImage />
                     <ProductTitle />
@@ -40,3 +42,9 @@ export const ShoppingPage = () => {
         </div>
     )
 }
+
+// otra forma de hacerlo
+
+ProductCard.Title = ProductTitle;
+ProductCard.Image = ProductImage;
+ProductCard.Buttons = ProductButtons;

@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 
 export interface ProductCardProps {
     product: Product;
-    children?: ReactElement | ReactElement[] 
+    children?: ReactElement | ReactElement[] // puede venir un children/ninguno / o varios
 }
 
 export interface Product {
